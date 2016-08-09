@@ -10,6 +10,9 @@ TODO
 ### Install Kinetis bootloader tool: blhost
 - http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/kinetis-cortex-m-mcus/kinetis-symbols-footprints-and-models/kinetis-bootloader:KBOOT
 
+### Share holder setup
+Provides access to tmk_keyboard codes and binary from Windows Explorer.
+
 
 Requirement
 -----------
@@ -29,15 +32,22 @@ Virtualbox extension pack is needed for USB support and it can be installed from
 
 Usage
 -----
-After install of Vagrant and VirtualBox and run vagrant commands.
+After install of Vagrant and VirtualBox and run vagrant commands. This makes vritual machine setup and started automatically.
 
     $ vagrant up
+
+Then log into the VM with ssh.
+
     $ vagrant ssh
 
-This makes vritual machine setup and started automatically and then ssh into the VM.
 See for the vagrant commands.
 
 - https://www.vagrantup.com/
+
+
+You can also use ssh client direclty with IP address `127.0.0.1` and port `2222`.  Or login from console in VirtualBox window if you want.
+
+Use user name `ubuntu` and passowrd `ubuntu` to login the system.
 
 
 Vagrant memo

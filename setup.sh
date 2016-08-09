@@ -15,6 +15,10 @@ apt-get install -y git unzip build-essential
 apt-get install -y make gcc-avr avr-libc binutils-avr dfu-programmer
 # for ARM Cortex-M
 apt-get install -y binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-newlib dfu-util
+# for USB HID kernel modlue - /dev/hidraw devices required by hid_listen
+apt-get install -y linux-image-extra-virtual
+# clean cached files
+apt-get clean
 
 # add udev rules for keyboard and bootloaders
 cat > /etc/udev/rules.d/99-tmk.rules <<EOF
