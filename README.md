@@ -13,6 +13,14 @@ TODO
 ### Share holder setup
 Provides access to tmk_keyboard codes and binary from Windows Explorer.
 
+### export/import issue
+It doesn't retain some settings between export and import: Cable Connected, Remote Display and Audio.
+https://forums.virtualbox.org/viewtopic.php?f=7&t=78840
+
+### shrink image size
+- use different box/distribution?
+- remove packages
+
 
 Requirement
 -----------

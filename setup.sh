@@ -10,6 +10,7 @@ grep $(hostname) /etc/hosts > /dev/null 2>&1 || echo "127.0.0.1 $(hostname)" >> 
 # install tools
 #
 apt-get update
+apt-get upgrade
 apt-get install -y git unzip build-essential
 # for AVR
 apt-get install -y make gcc-avr avr-libc binutils-avr dfu-programmer
@@ -18,6 +19,7 @@ apt-get install -y binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-e
 # for USB HID kernel modlue - /dev/hidraw devices required by hid_listen
 apt-get install -y linux-image-extra-virtual
 # clean cached files
+apt-get autoremove
 apt-get clean
 
 # add udev rules for keyboard and bootloaders

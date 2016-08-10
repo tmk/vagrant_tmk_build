@@ -63,6 +63,8 @@ Vagrant.configure("2") do |config|
     # Customize the amount of memory on the VM:
     #vb.memory = "1024"
 
+    vb.customize ["modifyvm", :id, "--audio", "none"]
+    vb.customize ["modifyvm", :id, "--vrde", "off"]
     vb.customize ["modifyvm", :id, "--usb", "on"]
     vb.customize ["modifyvm", :id, "--usbehci", "on"]
     vb.customize ["modifyvm", :id, "--uartmode1", "file", File.join("%s-console.log" % vb.name) ]
